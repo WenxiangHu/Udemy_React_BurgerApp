@@ -3,6 +3,7 @@ import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import './Burger.css'
 
 const Burger = (props) => {
+    console.log(props)
     let transformedIngredients = Object.keys(props.ingredients).map( //[salad, meat, ..]
         ingredientName => {
             return [...Array(props.ingredients[ingredientName])] //create empty array with size of required

@@ -1,5 +1,5 @@
-import React from 'react'
-import './Button.css'
+import React from 'react';
+import './Button.css';
 
 function Button(props) {
     let classes = '';
@@ -7,6 +7,7 @@ function Button(props) {
     return (
         <button
             className={classes}
+            disabled={props.disabled}
             onClick={props.clicked}>
             {props.children}
         </button>
