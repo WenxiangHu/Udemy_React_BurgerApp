@@ -18,7 +18,7 @@ function SideDrawer(props) {
             <div className={attachedClasses}>
                 <Logo height='11%' marginBottom='32px' />
                 <nav>
-                    <NavigationItems />
+                    <NavigationItems isAuthenticated={props.isAuth} />
                 </nav>
             </div>
         </Aux>

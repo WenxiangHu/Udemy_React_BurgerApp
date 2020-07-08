@@ -25,7 +25,7 @@ function BuildControls(props) {
             <button
                 onClick={props.ordered}
                 className='OrderButton'
-                disabled={!props.purchaseable}>ORDER NOW</button>
+                disabled={!props.purchaseable}>{props.iaAuth ? 'ORDER NOW' : 'SIGN UP TO ORDER'}</button>
         </div>
     )
 }
