@@ -11,7 +11,7 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 // import * as actionType from '../../store/actions/actionsType'
 import * as actions from '../../store/actions/index';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
     state = {
         // ingredients: {
         //     salad: 0,
@@ -28,7 +28,7 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
+        // console.log(this.props);
         // axios.get('https://udemy-burger-app-c9f28.firebaseio.com/ingredients.json')
         //     .then(response => {
         //         this.setState({
@@ -135,7 +135,7 @@ class BurgerBuilder extends Component {
         for (let key in disableInfo) {
             disableInfo[key] = disableInfo[key] <= 0
         }
-        console.log(this.props.ings)
+        // console.log(this.props.ings)
         let orderSummary = null;
         let burger = this.props.error ? <p>Ingredients can't be loaded</p> : <Spinner />
         if (this.props.ings) {
