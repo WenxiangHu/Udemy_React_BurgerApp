@@ -6,7 +6,7 @@ import Burger from '../../components/Burger/Burger';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Modal from '../../components/UI/Modal/Modal';
 import Spinner from '../../components/UI/Spinner/Spinner';
-import Aux from '../../hoc/Aux';
+import Aux from '../../hoc/auxComponent';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 // import * as actionType from '../../store/actions/actionsType'
 import * as actions from '../../store/actions/index';
